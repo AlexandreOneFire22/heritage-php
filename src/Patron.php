@@ -42,5 +42,11 @@ class Patron extends Employe
         dump("je me déplace en $this->voiture");
     }
 
+    //Redéfinir la méthode présenter
+    public function presenter(): void
+    {
+        dump("Bonjour, je suis {$this->getPrenom()} {$this->getNom()}, j'ai {$this->getAge()} et je suis le boss.");
+        dump("Bonjour, je suis $this->prenom $this->nom, j'ai $this->age et je suis le boss.");
+    }
 
 }
