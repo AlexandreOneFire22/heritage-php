@@ -1,0 +1,47 @@
+@startuml
+class Vehicule {
+
+ - marque {string}
+ - modele {string}
+ - vitesseMax {int}
+ - prixJournalier {float}
+
+
+ + afficherInfos() : string
+ + calculerCoutLocation(int $nbJours) : int
+}
+
+class Voiture {
+
+- nombrePortes {int}
+- typeCarburant {string}
+
+
++ afficherInfos() : string
++ calculerCoutLocation(int $nbJours) : int
+}
+
+class Moto {
+
+ - typeGuidon {string}
+
+
+ + afficherInfos() : string
+ + calculerCoutLocation(int $nbJours) : int
+
+}
+
+class Location {
+
+- nbJours {int}
+
+
++ louerVehicule(Vehicule $vehicule) : void
++ afficherDetailsLocation() : string
+
+}
+
+Vehicule <|-- Voiture
+Vehicule <|-- Moto
+Vehicule "0.*"<--"0.*" Location
+@enduml
