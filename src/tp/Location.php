@@ -20,7 +20,8 @@ class Location{
         $this->vehicules [] = $vehicule;
     }
 
-    public function afficherDetailsLocation() : string
+
+    public function afficherDetailsLocation() : void
     {
         $coutTotal = 0;
         echo "Location pour $this->nbJours jours : \n";
@@ -30,7 +31,7 @@ class Location{
             echo PHP_EOL;
             $coutTotal += $vehicule->calculerCoutLocation($this->nbJours);
         }
-        return "Coût total de la location : $coutTotal €";
+        echo "Coût total de la location : $coutTotal €";
     }
 
 

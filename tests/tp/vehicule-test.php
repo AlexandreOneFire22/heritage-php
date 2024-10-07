@@ -12,6 +12,8 @@ echo $voiture->afficherInfos();
 
 echo PHP_EOL;
 echo PHP_EOL;
+echo "__________________________________________________________________________________";
+echo PHP_EOL;
 echo PHP_EOL;
 
 $moto = new Moto("Yamaha","MT-07",210,50,"Acier");
@@ -19,6 +21,8 @@ $moto = new Moto("Yamaha","MT-07",210,50,"Acier");
 echo $moto->afficherInfos();
 
 echo PHP_EOL;
+echo PHP_EOL;
+echo "__________________________________________________________________________________";
 echo PHP_EOL;
 echo PHP_EOL;
 
