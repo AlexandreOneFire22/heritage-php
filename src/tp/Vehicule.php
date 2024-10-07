@@ -94,7 +94,7 @@ Vitesse Max : $this->vitesseMax km/h \n
 Prix Journalier : $this->prixJournalier €";
     }
 
-    public function calculerCoutLocation(int $nbJours) : int {
+    public function calculerCoutLocation(int $nbJours) : float {
         return $this->prixJournalier * $nbJours;
     }
 

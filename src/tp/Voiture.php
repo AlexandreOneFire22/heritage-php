@@ -58,7 +58,7 @@ Type de Carburant : $this->typeCarburant
 Prix Journalier : {$this->getPrixJournalier()} €";
     }
 
-    public function calculerCoutLocation(int $nbJours): int
+    public function calculerCoutLocation(int $nbJours): float
     {
         if ($this->typeCarburant == "électrique"){
             return $this->getPrixJournalier() * $nbJours * 1.10;

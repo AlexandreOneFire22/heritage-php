@@ -21,7 +21,7 @@ Type de Guidon : $this->typeGuidon \n
 Prix Journalier : {$this->getPrixJournalier()} €";
     }
 
-    public function calculerCoutLocation(int $nbJours): int
+    public function calculerCoutLocation(int $nbJours): float
     {
         if ($nbJours > 7 ){
             return $this->getPrixJournalier() * $nbJours * 0.95;
